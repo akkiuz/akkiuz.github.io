@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Template</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+    
+<link rel="stylesheet" href="data/lib/highlight/styles/github.css">
+<script src="data/lib/highlight/highlight.pack.js"></script>
+
+<link rel="stylesheet" href="data/css/style.css">
+<script type="text/javascript"  src="data/lib/jquery-3.2.1.min.js" ></script>
+<script type="text/javascript"  src="data/js/main.js" ></script>
+
+</head>
+<body>
+    <header>
+        <button type="button" id="convertButton">convert</button>
+    </header>
+    <div class="wrapper">
+        <textarea id="src">
+var size = 15;
+
+function setup() {
+    createCanvas(300, 300);
+    createCanvas(300, 300);
+    createCanvas(200, 300);
+}
+
+function draw() {
+    var h = 150;
+    background(100,200,255);
+    for(var x=0;x<=300;x+=30){
+        if(x == 150){
+            fill(255,255,255);
+        }
+        else{
+            fill(0,0,0);
+        }
+        ellipse(x,h,size,size);
+    }
+}
+        </textarea>
+
+        <div id="dst">
+            <pre><code class = "c++" id = "dstText"></code></pre>
+        </div> 
+        <div id="canvas-wrapper">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+</body>
+
+</html>

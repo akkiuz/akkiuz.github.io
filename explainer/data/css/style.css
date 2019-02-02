@@ -1,0 +1,53 @@
+body{
+    font-size: 12px;
+}
+
+header{
+	height: 30px;
+	width: 80%;
+}
+
+.wrapper{
+	display: flex;
+	-webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#src{
+	resize: none;
+	color: #333;
+	background: #f8f8f8;
+	height: 500px;
+	width: 45%;
+	margin: 20px;
+	font-size: 14px;
+}
+
+#dst{
+	resize: none;
+	overflow: scroll;
+	border: 1px solid #999;
+	height: 505px;
+	width: 45%;
+	margin: 20px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+
+#canvas-wrapper{
+	pointer-events: none;
+	position: absolute;
+	left: 50%;
+	height: 500px;
+	width: 46%;
+}
+
+span.gl{
+	color: green;
+}
+span.lc{
+	color: blue;
+}
