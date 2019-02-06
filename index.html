@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>jQuery Template</title>
+<title>Explainer(小林和輝　卒業制作)</title>
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -16,30 +16,28 @@
 </head>
 <body>
     <header>
-        <button type="button" id="convertButton">convert</button>
+        <!-- <button type="button" id="convertButton">convert</button> -->
     </header>
     <div class="wrapper">
         <textarea id="src">
 var size = 15;
 
 function setup() {
-    createCanvas(300, 300);
-    createCanvas(300, 300);
-    createCanvas(200, 300);
+createCanvas(300, 300);
 }
 
 function draw() {
-    var h = 150;
-    background(100,200,255);
-    for(var x=0;x<=300;x+=30){
-        if(x == 150){
-            fill(255,255,255);
-        }
-        else{
-            fill(0,0,0);
-        }
-        ellipse(x,h,size,size);
-    }
+var h = 150;
+background(100,200,255);
+for(var x=0;x<=300;x+=30){
+if(x == 150){
+fill(255,255,255);
+}
+else{
+fill(0,0,0);
+}
+ellipse(x,h,size,size);
+}
 }
         </textarea>
 
