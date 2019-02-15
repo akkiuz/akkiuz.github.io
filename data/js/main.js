@@ -6,7 +6,7 @@ $(window).on('load', function() {
     var gvarimg = new Image();
     gvarimg.src = "data/image/g_var.png";
     var forimg = new Image();
-    forimg.src = "data/image/for.png";
+    forimg.src = "data/image/for.svg";
     var ifimg = new Image();
     ifimg.src = "data/image/if.png";
     var dispimg = new Image();
